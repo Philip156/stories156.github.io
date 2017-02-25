@@ -1,0 +1,22 @@
+<div class="main" id="signup">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+    		<h1>Get the latest stories and updates now</h1>
+        <div class="my_form">
+        	<%= form_for(@new_signup) do |f| %>
+        		<div class="row">
+        	    <%= f.text_field :firstname, :placeholder => "First name", :class => "form" %>
+        		</div>
+        		<div class="row">
+        			<%= f.text_field :email, :placeholder => "Email", :class => "form" %>
+        		</div>
+        		<div class="row">
+        			<%= f.submit "Join", :class => "btn btn-primary" %>
+        	</div>
+        <% end %>
+        </div>
+    	</div>
+    </div>
+  </div>
+</div>

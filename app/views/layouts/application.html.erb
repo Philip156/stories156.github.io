@@ -2,13 +2,48 @@
 <html>
   <head>
     <title>Stories</title>
+    <!-- Include a CSS for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Include a CSS for web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400|Roboto:100,300,400,500" rel="stylesheet">  
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/signups">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+  
+	<%= yield %>
+  
+  <!-- the footer -->
+  <div class="footer">
+  	<div class="container">
+    	<div class="row">
+      	<div class="col-md-12">
+    			<h5>Phil Savenok 2017</h5>
+    		</div>
+    	</div>
+  	</div>
+	</div>	
+  
+  <!-- Include jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      
   </body>
 </html>
+ 

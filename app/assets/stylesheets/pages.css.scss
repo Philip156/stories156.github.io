@@ -1,0 +1,98 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
+  font-size: 100;
+}
+
+// Main Section
+.main {
+  height: 700px;
+  text-align: center;
+ 
+  background: asset_url(old-school-print-kimberly) center;
+  background-size: cover;
+}
+
+//  Supporting Section
+.supporting {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+.supporting h1 {
+  color: black;
+  margin: 0px 0px 40px 0;
+}
+.supporting_two {
+  background: asset_url(phone-aaron-burden) center;
+  background-size: cover;
+  height: 500px;
+}
+
+//  About Section
+.about {
+  height: 700px;
+  text-align: center;
+  background: asset_url(fkyhynowp-4-jakob-owens) center;
+  background-size: cover;
+  color: white;
+}
+.about h1 {
+  position: relative;
+  margin-top: 165px;
+}
+
+// Footer Sectiion
+.footer {
+  text-align: center;
+  background-color: #ccc;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer h5 {
+  color: #efefef;
+  font-family: 'Roboto';
+}
+
+h1 {
+  color: white;
+  margin-top: 275px;
+  font-weight: 100;
+  margin-bottom: 45px;
+}
+h3 {
+  font-weight: 100;
+  margin-bottom: 45px;
+}
+.btn {
+  border-radius: 0;
+  padding: 10px 30px;
+  font-weight: 300;
+  background-color: #0097A7;
+  border: 1px solid #0097A7;
+}
+.btn:hover {
+  background-color: #00ACC1;
+  border: 1px solid #00ACC1;
+}
+.my_form {
+  text-align: left;
+}
+.form {
+  padding: 10px 30px;
+  margin-bottom: 15px;
+  border: none;
+  border-left: 3px solid #fff;
+  transition: border-left 0.5s linear;
+}
+.form:focus {
+  outline: none;
+  box-shadow: none;
+  border-left: 3px solid #0097A7;
+}
